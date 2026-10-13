@@ -7,6 +7,7 @@ export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElemen
   size?: "sm" | "md" | "lg";
   href?: string;
   isExternal?: boolean;
+  download?: boolean | string;
   children: React.ReactNode;
 }
 
@@ -18,6 +19,7 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
       size = "md",
       href,
       isExternal,
+      download,
       children,
       ...props
     },
@@ -40,7 +42,7 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     const sizeStyles = {
       sm: "h-9 px-3.5 text-xs rounded-lg gap-1.5",
       md: "h-11 px-5 text-sm rounded-xl gap-2",
-      lg: "h-13 px-7 text-base rounded-xl gap-2.5",
+      lg: "h-12 sm:h-[50px] px-6 sm:px-7 text-sm sm:text-base rounded-xl gap-2.5",
     };
 
     const combinedClassName = cn(
@@ -57,6 +59,7 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
             href={href}
             target="_blank"
             rel="noopener noreferrer"
+            download={download}
             className={combinedClassName}
           >
             {children}
@@ -64,7 +67,7 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
         );
       }
       return (
-        <Link href={href} className={combinedClassName}>
+        <Link href={href} download={download} className={combinedClassName}>
           {children}
         </Link>
       );

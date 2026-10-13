@@ -14,9 +14,9 @@ export function Header() {
 
   return (
     <>
-      <header className="sticky top-0 z-40 w-full border-b border-surface-border/80 bg-background/80 backdrop-blur-md">
+      <header className="sticky top-0 z-40 w-full border-b border-lavender-500/15 bg-background/90 backdrop-blur-sm">
         <Container>
-          <div className="flex h-16 sm:h-20 items-center justify-between">
+          <div className="flex h-14 sm:h-16 items-center justify-between">
             {/* Logo */}
             <div className="flex items-center gap-6">
               <Link
