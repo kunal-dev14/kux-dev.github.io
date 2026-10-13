@@ -59,7 +59,7 @@ export interface ProfileData {
 
 export const profileData: ProfileData = {
   name: "Kunal",
-  brand: "KUX.DEV",
+  brand: "Kunal Shinde",
   tagline: "I BUILD. I LEARN. I KEEP SHIPPING.",
   roles: [
     "BCA Student",

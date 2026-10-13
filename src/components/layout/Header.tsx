@@ -7,6 +7,7 @@ import { profileData } from "@/data/profile";
 import { projects } from "@/data/projects";
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
+import { KMonogram } from "@/components/ui/Icons";
 import { MobileNav } from "./MobileNav";
 
 export function Header() {
@@ -21,13 +22,16 @@ export function Header() {
             <div className="flex items-center gap-6">
               <Link
                 href="/"
-                className="group flex items-center gap-2 text-lg sm:text-xl font-mono font-bold tracking-widest text-white transition-colors"
+                className="group flex items-center gap-2.5 text-slate-100 hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-lavender-400 rounded-lg"
               >
-                <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-surface-elevated border border-surface-border text-lavender-400 group-hover:border-lavender-500/50 group-hover:text-white transition-colors">
-                  K
+                <span className="relative flex h-8 w-8 items-center justify-center rounded-lg bg-surface-elevated border border-surface-border text-lavender-400 shadow-sm transition-all duration-200 group-hover:border-lavender-500/50 group-hover:shadow-[0_0_12px_rgba(156,118,235,0.22)]">
+                  <KMonogram className="h-[18px] w-[18px]" />
                 </span>
-                <span>
-                  KUX<span className="text-lavender-400">.DEV</span>
+                <span className="text-base sm:text-lg font-bold tracking-tight text-white">
+                  Kunal{" "}
+                  <span className="text-lavender-400 font-semibold transition-colors group-hover:text-lavender-300">
+                    Shinde
+                  </span>
                 </span>
               </Link>
             </div>

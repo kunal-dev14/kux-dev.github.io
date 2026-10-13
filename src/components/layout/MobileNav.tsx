@@ -3,7 +3,7 @@
 import React, { useEffect } from "react";
 import Link from "next/link";
 import { X, ArrowRight, Mail } from "lucide-react";
-import { GithubIcon, LinkedinIcon } from "@/components/ui/Icons";
+import { GithubIcon, LinkedinIcon, KMonogram } from "@/components/ui/Icons";
 import { profileData } from "@/data/profile";
 import { Button } from "@/components/ui/Button";
 
@@ -53,9 +53,17 @@ export function MobileNav({ isOpen, onClose }: MobileNavProps) {
           <Link
             href="/"
             onClick={onClose}
-            className="text-lg font-mono font-bold tracking-wider text-white"
+            className="group flex items-center gap-2.5 text-base font-bold tracking-tight text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-lavender-400 rounded-lg"
           >
-            {profileData.brand}
+            <span className="relative flex h-8 w-8 items-center justify-center rounded-lg bg-surface-elevated border border-surface-border text-lavender-400 shadow-sm transition-all duration-200 group-hover:border-lavender-500/50">
+              <KMonogram className="h-[18px] w-[18px]" />
+            </span>
+            <span>
+              Kunal{" "}
+              <span className="text-lavender-400 font-semibold">
+                Shinde
+              </span>
+            </span>
           </Link>
           <button
             type="button"
