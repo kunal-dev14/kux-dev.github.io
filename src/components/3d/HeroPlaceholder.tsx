@@ -3,7 +3,7 @@ import { Sparkles, Terminal } from "lucide-react";
 
 export function HeroPlaceholder() {
   return (
-    <div className="relative flex h-[380px] sm:h-[460px] lg:h-[540px] w-full items-center justify-center overflow-hidden rounded-3xl border border-surface-border bg-gradient-to-b from-surface-elevated/40 via-surface/30 to-background/50 p-6 backdrop-blur-sm">
+    <div className="relative flex h-[340px] sm:h-[420px] lg:h-[480px] w-full items-center justify-center overflow-hidden rounded-3xl border border-surface-border bg-gradient-to-b from-surface-elevated/40 via-surface/30 to-background/50 p-6 backdrop-blur-sm">
       {/* Subtle radial glow background */}
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-lavender-500/15 via-transparent to-transparent opacity-60" />
 

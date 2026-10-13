@@ -5,10 +5,10 @@ import { Container } from "@/components/ui/Container";
 
 export function ExperienceEducationSection() {
   return (
-    <section id="experience" className="py-16 sm:py-20 lg:py-24 border-t border-surface-border/60">
+    <section id="experience" className="py-12 sm:py-14 lg:py-16 border-t border-surface-border/60">
       <div id="education" className="sr-only" />
       <Container>
-        <div className="mb-10 lg:mb-12">
+        <div className="mb-7 sm:mb-8">
           <div className="inline-flex items-center gap-2 mb-2.5 text-xs font-mono font-medium tracking-widest uppercase text-lavender-400">
             <span className="h-1.5 w-1.5 rounded-full bg-lavender-400" />
             <span>Timeline</span>

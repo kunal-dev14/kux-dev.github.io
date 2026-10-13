@@ -4,10 +4,10 @@ import { Container } from "@/components/ui/Container";
 
 export function CybersecurityJourneySection() {
   return (
-    <section id="journey" className="py-16 sm:py-20 lg:py-24 border-t border-surface-border/60">
+    <section id="journey" className="py-12 sm:py-14 lg:py-16 border-t border-surface-border/60">
       <Container>
         <div className="max-w-3xl">
-          <div className="mb-8 sm:mb-10">
+          <div className="mb-6 sm:mb-7">
             <div className="inline-flex items-center gap-2 mb-2.5 text-xs font-mono font-medium tracking-widest uppercase text-lavender-400">
               <span className="h-1.5 w-1.5 rounded-full bg-lavender-400" />
               <span>Specialization</span>

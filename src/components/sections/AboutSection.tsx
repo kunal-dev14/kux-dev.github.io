@@ -3,7 +3,7 @@ import { Container } from "@/components/ui/Container";
 
 export function AboutSection() {
   return (
-    <section id="about" className="py-16 sm:py-20 lg:py-24 border-t border-surface-border/60">
+    <section id="about" className="py-12 sm:py-14 lg:py-16 border-t border-surface-border/60">
       <Container>
         <div className="max-w-3xl space-y-4">
           <div className="inline-flex items-center gap-2 text-xs font-mono font-medium tracking-widest uppercase text-lavender-400">

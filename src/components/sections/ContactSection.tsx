@@ -7,7 +7,7 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 
 export function ContactSection() {
   return (
-    <section id="contact" className="py-16 sm:py-20 lg:py-24 border-t border-surface-border/60">
+    <section id="contact" className="py-12 sm:py-14 lg:py-16 border-t border-surface-border/60">
       <Container>
         <div className="max-w-3xl mx-auto">
           <SectionHeading

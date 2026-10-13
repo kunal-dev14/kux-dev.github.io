@@ -87,7 +87,7 @@ export default function HeroCanvas() {
         contain: "layout paint",
         transform: "translateZ(0)",
       }}
-      className="relative flex h-[380px] sm:h-[460px] lg:h-[540px] w-full items-center justify-center overflow-hidden rounded-3xl border border-surface-border bg-gradient-to-b from-surface-elevated/40 via-surface/30 to-background/50 backdrop-blur-sm group select-none touch-pan-y"
+      className="relative flex h-[340px] sm:h-[420px] lg:h-[480px] w-full items-center justify-center overflow-hidden rounded-3xl border border-surface-border bg-gradient-to-b from-surface-elevated/40 via-surface/30 to-background/50 backdrop-blur-sm group select-none touch-pan-y"
     >
       {/* Subtle radial glow background */}
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-lavender-500/15 via-transparent to-transparent opacity-70" />

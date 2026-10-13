@@ -8,9 +8,9 @@ import { StatusBadge } from "@/components/projects/StatusBadge";
 
 export function SelectedProjectsSection() {
   return (
-    <section id="projects" className="py-16 sm:py-20 lg:py-24 border-t border-surface-border/60">
+    <section id="projects" className="py-12 sm:py-14 lg:py-16 border-t border-surface-border/60">
       <Container>
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10">
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-7 sm:mb-8">
           <SectionHeading
             eyebrow="Portfolio"
             title="Things I've built."
